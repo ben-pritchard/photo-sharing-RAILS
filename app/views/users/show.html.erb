@@ -10,5 +10,5 @@
   <%= image_tag current_user.photos.first.file.url(:thumb) %>
 
 <% else %>
-  <%= link_to "Add a photo", new_photo_path, :class => "btn btn-primary" %>
+  <%= link_to "Add a photo", new_user_photo_path(current_user), :class => "btn btn-primary" %>
 <% end %>

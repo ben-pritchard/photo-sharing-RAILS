@@ -2,5 +2,5 @@
 
 <%= form_for current_user, :url => users_path, :html => { :multipart => true } do |form| %>
   <%= form.file_field :file %>
-  <%= submit_tag "Upload", photos_path, :class => "btn btn-primary" %>
+  <%= submit_tag "Upload", user_photos_path, :class => "btn btn-primary" %>
 <% end %>
